@@ -1,0 +1,204 @@
+:root {
+  --blue: #3882F6;
+  --dark: #1F2937;
+  --light: #F9FAF8;
+  --grey: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Colors */
+.page-header,
+.page-footer {
+  background-color: var(--dark);
+}
+
+.intro-text {
+  color: var(--grey);
+}
+
+.intro-title {
+  color: var(--light);
+  font-weight: 900;
+}
+
+
+/* HEADER Layout plus style */
+
+/* I honestly don't know if I need these lines or not, the page looks the same without these...
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+} */
+
+.nav-list,
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list {
+  list-style-type: none;
+  color: var(--grey);
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.header-logo {
+  color: var(--light);
+  font-size: 24px;
+}
+
+.nav-items {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-bottom: 70px;
+}
+
+
+/* It doesn't give me the desired result.
+.intro-text-content,
+.intro-img {
+  flex: 1;
+} */
+
+.intro-title {
+  font-size: 48px;
+}
+
+.intro-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.intro-button {
+  align-self: flex-start;
+  padding: 5px 20px;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: var(--light);
+}
+
+.intro-img {
+  border-radius: 10px;
+}
+
+/* PAGE CONTENT */
+/* INFO Section */
+
+.info {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info-header {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  gap: 30px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-img {
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+}
+
+/* Quote section */
+
+.quote {
+  background-color: var(--grey);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  font-weight: light;
+  font-style: italic;
+  text-align: center;
+  color: var(--dark);
+}
+
+.quote-writer {
+  align-self: flex-end;
+}
+
+/* SIGN UP Section */
+
+.sign-up-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.sign-up-box {
+  background-color: var(--blue);
+  color: var(--light);
+  border-radius: 5px;
+  padding: 30px 100px;
+  display: flex;
+  gap: 100px;
+}
+
+.sign-up-text {
+  font-size: 12px;
+}
+
+.sign-up {
+  background-color: var(--blue);
+  border: 1px solid var(--light);
+  color: var(--light);
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+
+.page-footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text{
+  color: var(--light);
+}
